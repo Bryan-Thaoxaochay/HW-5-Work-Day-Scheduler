@@ -5,12 +5,12 @@
 // THEN I am presented with time blocks for standard business hours - DONE
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
-// WHEN I click into a time block
-// THEN I can enter an event
-// WHEN I click the save button for that time block
-// THEN the text for that event is saved in local storage
+// WHEN I click into a time block - DONE
+// THEN I can enter an event - DONE
+// WHEN I click the save button for that time block - DONE
+// THEN the text for that event is saved in local storage - DONE
 // WHEN I refresh the page
-// THEN the saved events persist
+// THEN the saved events persist - DONE
 
 // Pseudocode
     // Date
@@ -34,13 +34,11 @@ var currentYear = date.getFullYear();
 
 $("#currentDay").append(date);
 
-// Goal: Save what was entered into the textbox in local storage.
-    // 1. Text is entered into textbox
-    // 2. Save button is clicked
-    // 3. Text is stored into local storage
-    
+// Save what was entered into the textbox in local storage
     $(".button").on("click", function(){
         var storedInfo = $(".textbox").val();
         localStorage.setItem("storedInfo", storedInfo);
         console.log(storedInfo);
     });
+
+// Changing the color of the textbox
