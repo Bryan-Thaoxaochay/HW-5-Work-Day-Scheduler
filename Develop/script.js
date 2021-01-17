@@ -11,3 +11,16 @@
 // THEN the text for that event is saved in local storage
 // WHEN I refresh the page
 // THEN the saved events persist
+
+// Pseudocode
+    // Date
+        // Current date is displayed
+
+    // Time Blocks
+        // 900-500
+        // Text Box
+        // Save Button
+        // Color Coded: Red = Passed ; Green = Available and Entered ; Yellow = Available
+    
+    // Local Storage
+        // Text entered into text box is saved to local storage
