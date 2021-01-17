@@ -24,3 +24,12 @@
     
     // Local Storage
         // Text entered into text box is saved to local storage
+
+// Adding the date to the webpage
+var date = new Date();
+
+var currentMonth = date.getMonth();
+var currentDay = date.getDate();
+var currentYear = date.getFullYear();
+
+$("#currentDay").append(date);
