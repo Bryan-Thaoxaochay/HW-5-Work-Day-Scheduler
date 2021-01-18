@@ -10,7 +10,7 @@
 // WHEN I click the save button for that time block - DONE
 // THEN the text for that event is saved in local storage - DONE
 // WHEN I refresh the page
-// THEN the saved events persist - DONE
+// THEN the saved events persist
 
 // Pseudocode
     // Date
@@ -28,11 +28,11 @@
 // Adding the date to the webpage
 var date = new Date();
 
-var currentMonth = date.getMonth();
+var currentMonth = date.toLocaleString('default', { month: 'long' })
 var currentDay = date.getDate();
 var currentYear = date.getFullYear();
 
-$("#currentDay").append(date);
+$("#currentDay").append(currentMonth + " " + currentDay + ", " + currentYear);
 
 function storeAndattach() {
     $(".button").on("click", function(){
@@ -54,6 +54,7 @@ function storeAndattach() {
 }
 
 storeAndattach();
-// Attaching storedInfo below text
 
-// Changing the color of the textbox 
+// Changing the color of the textbox
+    // Color of the textbox changes with the time of the day
+    // I believe an if/else statement will help change the color of the text
