@@ -41,4 +41,6 @@ $("#currentDay").append(date);
         console.log(storedInfo);
     });
 
+// Attaching storedInfo below text
+
 // Changing the color of the textbox
