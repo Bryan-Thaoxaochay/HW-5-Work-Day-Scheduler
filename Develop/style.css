@@ -18,11 +18,6 @@ body {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
-}
-
-#otherTextbox{
-  background-color: rgb(206, 206, 206);
 }
 
 /* NOT LINKED */

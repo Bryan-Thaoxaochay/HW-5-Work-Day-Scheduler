@@ -34,13 +34,26 @@ var currentYear = date.getFullYear();
 
 $("#currentDay").append(date);
 
-// Save what was entered into the textbox in local storage
+function storeAndattach() {
     $(".button").on("click", function(){
-        var storedInfo = $(".textbox").val();
-        localStorage.setItem("storedInfo", storedInfo);
-        console.log(storedInfo);
+
+        // Save what was entered into the textbox in local storage
+        var storingInfo = $(".textbox").val();
+        localStorage.setItem("storingInfo", storingInfo);
+
+        // Attaching what is stored onto the webpage
+        var storedInfo = localStorage.getItem("storingInfo");
+
+        var tRow = $("<tr>");
+        var td = $("<td>").append(storedInfo);
+        tRow.append(td);
+        $("tbody").append(tRow);
     });
 
+    
+}
+
+storeAndattach();
 // Attaching storedInfo below text
 
-// Changing the color of the textbox
+// Changing the color of the textbox 
