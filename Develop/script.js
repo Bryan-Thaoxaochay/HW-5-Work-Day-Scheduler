@@ -17,18 +17,6 @@
 // WHEN I refresh the page
 // THEN the saved events persist
 
-// Pseudocode
-    // Date
-        // Current date is displayed - DONE
-
-    // Time Blocks
-        // 900-500 - DONE
-        // Text Box - DONE
-        // Save Button - DONE
-        // Color Coded: Red = Passed ; Green = Available
-    
-    // Local Storage
-        // Text entered into text box is saved to local storage
 
 // Adding the date to the webpage
 var date = new Date();
@@ -46,17 +34,17 @@ console.log(currentHour);
     // If/Else Statement - conditions for the hours
     if (currentHour < 9) {
         // All textboxes will be green
-        $(".textbox").css("background-color", "green");
+        $(".textbox").css("background-color", "lightgreen");
     } else if (currentHour === 9) {
         //  9:00 AM textbox will be red
-        $("#9AM").css("background-color", "red");
+        $("#9AM").css("background-color", "yellow");
 
     } else if (currentHour === 10) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
         // 10:00 AM textbox will be red
-        $("#10AM").css("background-color", "red");
+        $("#10AM").css("background-color", "yellow");
 
     } else if (currentHour === 11) {
         //  9:00 AM textbox will be red
@@ -66,7 +54,7 @@ console.log(currentHour);
         $("#10AM").css("background-color", "red");
 
         // 11:00 AM textbox will be red
-        $("#11AM").css("background-color", "red");
+        $("#11AM").css("background-color", "yellow");
 
     } else if (currentHour === 12) {
         //  9:00 AM textbox will be red
@@ -79,7 +67,7 @@ console.log(currentHour);
         $("#11AM").css("background-color", "red");
 
         // 12:00 PM textbox will be red
-        $("#12PM").css("background-color", "red");
+        $("#12PM").css("background-color", "yellow");
 
     } else if (currentHour === 13) {
         //  9:00 AM textbox will be red
@@ -95,7 +83,7 @@ console.log(currentHour);
         $("#12AM").css("background-color", "red");
 
         // 1:00 PM textbox will be red
-        $("#1PM").css("background-color", "red");
+        $("#1PM").css("background-color", "yellow");
 
     } else if (currentHour === 14) {
         //  9:00 AM textbox will be red
@@ -114,7 +102,7 @@ console.log(currentHour);
         $("#1PM").css("background-color", "red");
 
         // 2:00 PM textbox will be red
-        $("#2PM").css("background-color", "red");
+        $("#2PM").css("background-color", "yellow");
 
     } else if (currentHour === 15) {
         //  9:00 AM textbox will be red
@@ -136,7 +124,7 @@ console.log(currentHour);
         $("#2PM").css("background-color", "red");
 
         // 3:00 PM textbox will be red
-        $("#3PM").css("background-color", "red");
+        $("#3PM").css("background-color", "yellow");
 
     } else if (currentHour === 16) {
         //  9:00 AM textbox will be red
@@ -161,7 +149,7 @@ console.log(currentHour);
         $("#3PM").css("background-color", "red");
 
         // 4:00 PM textbox will be red
-        $("#4PM").css("background-color", "red");
+        $("#4PM").css("background-color", "yellow");
     } else {
         // All textboxes will be red
         $(".textbox").css("background-color", "red")
