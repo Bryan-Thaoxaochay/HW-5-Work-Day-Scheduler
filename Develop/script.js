@@ -41,29 +41,24 @@ $("#currentDay").append(currentMonth + " " + currentDay + ", " + currentYear);
 
 // Changing the color of the textbox
 var currentHour = date.getHours(); // Return index 0 through 23
+console.log(currentHour);
 
     // If/Else Statement - conditions for the hours
-    if (currentHour < 8) {
+    if (currentHour < 9) {
         // All textboxes will be green
         $(".textbox").css("background-color", "green");
-    }
-
-    else if (currentHour > 9 && currentHour < 10) {
+    } else if (currentHour === 9) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 10 && currentHour < 11) {
+    } else if (currentHour === 10) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
         // 10:00 AM textbox will be red
         $("#10AM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 11 && currentHour < 12) {
+    } else if (currentHour === 11) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -73,9 +68,7 @@ var currentHour = date.getHours(); // Return index 0 through 23
         // 11:00 AM textbox will be red
         $("#11AM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 12 && currentHour < 13) {
+    } else if (currentHour === 12) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -86,11 +79,9 @@ var currentHour = date.getHours(); // Return index 0 through 23
         $("#11AM").css("background-color", "red");
 
         // 12:00 PM textbox will be red
-        $("#12AM").css("background-color", "red");
+        $("#12PM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 13 && currentHour < 14) {
+    } else if (currentHour === 13) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -106,9 +97,7 @@ var currentHour = date.getHours(); // Return index 0 through 23
         // 1:00 PM textbox will be red
         $("#1PM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 14 && currentHour < 15) {
+    } else if (currentHour === 14) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -127,9 +116,7 @@ var currentHour = date.getHours(); // Return index 0 through 23
         // 2:00 PM textbox will be red
         $("#2PM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 15 && currentHour < 16) {
+    } else if (currentHour === 15) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -151,9 +138,7 @@ var currentHour = date.getHours(); // Return index 0 through 23
         // 3:00 PM textbox will be red
         $("#3PM").css("background-color", "red");
 
-    }
-
-    else if (currentHour > 16 && currentHour < 17) {
+    } else if (currentHour === 16) {
         //  9:00 AM textbox will be red
         $("#9AM").css("background-color", "red");
 
@@ -177,9 +162,7 @@ var currentHour = date.getHours(); // Return index 0 through 23
 
         // 4:00 PM textbox will be red
         $("#4PM").css("background-color", "red");
-    }
-
-    else (currentHour > 17); {
+    } else {
         // All textboxes will be red
         $(".textbox").css("background-color", "red")
     }
