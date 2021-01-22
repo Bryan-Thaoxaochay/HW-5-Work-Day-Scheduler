@@ -30,7 +30,7 @@ Images\HW-5-Work-Day-Scheduler-After-Refresh.png
 
 ## After Saving and Refresh
 
-![](images/HW-5-Work-Day-Scheduler-After-Refresh.png)
+Images\HW-5-Work-Day-Scheduler-Before-Saving.png
 
 # Links
 
