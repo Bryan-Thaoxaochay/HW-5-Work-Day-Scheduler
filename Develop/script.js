@@ -160,3 +160,4 @@ function loadLocalStorage() {
     tRow.append(td);
     $("tbody").append(tRow);
 };
+// Only appends the last local storage
