@@ -146,6 +146,11 @@ $(".button").on("click", function () {
     // Save what was entered into the textbox in local storage
     var storingInfo = $(this).siblings(".textbox").val();
     localStorage.setItem("storingInfo", storingInfo);
+});
+
+
+// Pulling from local storage and invoking on page load
+function loadLocalStorage() {
 
     // Attaching what is stored onto the webpage
     var storedInfo = localStorage.getItem("storingInfo");
@@ -154,17 +159,4 @@ $(".button").on("click", function () {
     var td = $("<td>").append(storedInfo);
     tRow.append(td);
     $("tbody").append(tRow);
-});
-
-
-// Pulling from local storage and invoking on page load
-
-function loadLocalStorage() {
-
-    var storedInfo = localStorage.getItem("storingInfo");
-
-    var tRow = $("<tr>");
-    var td = $("<td>").append(storedInfo);
-    tRow.append(td);
-    $("tbody").append(tRow);
-}
+};
