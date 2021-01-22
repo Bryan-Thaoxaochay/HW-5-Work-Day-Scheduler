@@ -24,6 +24,14 @@ Loading the webpage will give you a display of the header, a subheader, the curr
 
 # Screenshots
 
+## Before Saving
+
+![](HW-5-Work-Day-Scheduler/Images/HW-5-Work-Day-Scheduler-Before-Saving.png)
+
+## After Saving and Refresh
+
+![](HW-5-Work-Day-Scheduler/Images/HW-5-Work-Day-Scheduler-After-Refresh.png)
+
 # Links
 
 ## Webpage URL
