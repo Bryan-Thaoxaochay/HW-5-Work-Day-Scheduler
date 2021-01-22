@@ -26,11 +26,11 @@ Loading the webpage will give you a display of the header, a subheader, the curr
 
 ## Before Saving
 
-![](HW-5-Work-Day-Scheduler/Images/HW-5-Work-Day-Scheduler-Before-Saving.png)
+![](images/HW-5-Work-Day-Scheduler-Before-Saving.png)
 
 ## After Saving and Refresh
 
-![](HW-5-Work-Day-Scheduler/Images/HW-5-Work-Day-Scheduler-After-Refresh.png)
+![](images/HW-5-Work-Day-Scheduler-After-Refresh.png)
 
 # Links
 
