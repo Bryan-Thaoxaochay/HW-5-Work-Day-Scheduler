@@ -1,7 +1,3 @@
-// WHEN I refresh the page
-// THEN the saved events persist
-
-
 // Adding the date to the webpage
 var date = new Date();
 
@@ -142,6 +138,7 @@ if (currentHour < 9) {
 
 // Function that stores and attaches what was entered in textbox
 $(".button").on("click", function () {
+    
 
     // Save what was entered into the textbox in local storage
     var storingInfo = $(this).siblings(".textbox").val();
@@ -160,4 +157,3 @@ function loadLocalStorage() {
     tRow.append(td);
     $("tbody").append(tRow);
 };
-// Only appends the last local storage
