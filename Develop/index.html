@@ -26,7 +26,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload="loadLocalStorage()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -52,7 +52,7 @@
             <th scope="row">10:00 AM</th>
             <td>
               <div class="input-group mb-3">
-                <input type="text" class="w-75 p-3 textbox" id="10AM">
+                <input type="text" class="w-75 p-3 textbox" id="10AM" >
                 <button class="btn btn-outline-secondary button" type="button" id="button-addon2">Save</button>
               </div>
             </td>
